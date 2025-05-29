@@ -46,12 +46,11 @@ section h2 {
     display: inline-block;
 }
 
-/* NUEVO: contenedor flex para agrupar productos */
 .group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* opcional, mejora el espacio entre productos */
+    gap: 20px; 
 }
 
 .product {
@@ -83,14 +82,12 @@ section h2 {
     color: #e74c3c;
 }
 
-/* Responsivo para tablets */
 @media (max-width: 768px) {
     .product {
         width: 48%;
     }
 }
 
-/* Responsivo para móviles */
 @media (max-width: 480px) {
     .product {
         width: 100%;
