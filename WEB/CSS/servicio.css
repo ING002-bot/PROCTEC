@@ -46,23 +46,21 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Contenedor para agrupar tarjetas horizontalmente */
 .group {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    flex-wrap: nowrap; /* ⛔️ No hacer wrap en pantallas grandes */
-    overflow-x: auto;  /* ✅ Permitir desplazamiento horizontal si no cabe */
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
     gap: 20px;
     padding: 0 10px;
 }
 
-/* Estilo general para las tarjetas */
 .maintenance-p,
 .maintenance-c,
 .maintenance-pd,
 .p {
-    min-width: 300px; /* ✅ Se mantiene tamaño mínimo constante */
+    min-width: 300px; 
     max-width: 300px;
     background-color: white;
     padding: 15px;
@@ -70,7 +68,7 @@ section h2 {
     text-align: center;
     border-radius: 8px;
     transition: transform 0.2s;
-    flex: 0 0 auto; /* ✅ No crecer ni encoger */
+    flex: 0 0 auto; 
 }
 
 .maintenance-p:hover,
@@ -95,10 +93,9 @@ section h2 {
     font-size: 1.1em;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .group {
-        flex-wrap: wrap; /* ✅ En pantallas pequeñas, sí se acomodan en filas */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 
